@@ -1,0 +1,43 @@
+Importing Packages and Classes
+	
+	- enclose programs in public class {}
+	- class is a contaner for a program
+	- import packageName.*;
+
+The Scanner Class
+	
+	- import.jaava.util.Scanner;
+
+Creating a Scanner Object
+	
+	- Scanner keyboad = new Scanner(System.in);
+
+Prompting the User for Input
+	- System.out.println("[Prompt]");
+
+	- int num = keyboard.nextInt();
+
+nextInt()
+returns the next int value in the input
+
+nextDouble()
+returns the next double value in the input
+
+nextFloat()
+returns the next float value in the input
+
+nextLong()
+returns the next long value in the input
+
+nextByte()
+returns the next byte value in the input
+
+nextShort()
+returns the next short value in the input
+
+next()
+returns the next one word string value in the input
+
+nextLine()
+returns the next multi-word String value in the input
+
