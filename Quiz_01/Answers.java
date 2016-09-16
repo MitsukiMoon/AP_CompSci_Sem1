@@ -10,6 +10,8 @@ public class Answers
 		int h = 45;
 		int w = 64;
 		
+	
+		
 		
 		System.out.println ("Question 1: " + "IronMan has " + num + " kinds of weapons in his suit.");
 		System.out.println ("Question 2: " + pres + " once said, " + quote);

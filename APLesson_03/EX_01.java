@@ -26,5 +26,7 @@ public class EX_01
 		System.out.println ("Your parents never loved you. What do you want to be?");
 		String job = keyboard.next();
 		
+
+		
 	}
 }
