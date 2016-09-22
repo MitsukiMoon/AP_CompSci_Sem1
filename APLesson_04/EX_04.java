@@ -22,13 +22,13 @@ public class EX_04
 		
 		double compound = calculate.calcinterest(r, n, P, t);
 		
-		System.out.printf("The total compounded interest is %10.2f\n", compound);
+		System.out.printf("The total compounded interest is $ %.2f\n", compound);
 		
 	}
 	
 	public double calcinterest (double r, double n, double P, double t)
 	{
-		return (Math.pow(P * (1 + (r/n)), (n * t)));
+		return (P * Math.pow((1 + (r/n)), (n * t)));
 	
 		
 	}
