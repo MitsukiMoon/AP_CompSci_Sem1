@@ -1,6 +1,9 @@
 import java.util.Scanner;
 public class EX_03
 {
+	
+	static double side, surfaceArea;
+	
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
@@ -8,23 +11,30 @@ public class EX_03
 
 		System.out.println ("Please enter side");
 		
-		double side = keyboard.nextFloat();
+		side = keyboard.nextFloat();
 		
 		String place1 = keyboard.nextLine();
 		
 
+	
 		
-		double surfaceArea = calculate.Area(side);
 		
-		System.out.printf("The Surface Area of a cube with length %10.5f is %10.5f \n", side, surfaceArea);
+		Area();
+		
+		print();
 		
 	}
 	
-	public double Area (double side)
+	public static void Area ()
 	{
-		return ((6 * side * side));
+		surfaceArea = ((6 * side * side));
 	
+	}
+	
+	public static void print()
+	{
 		
+		System.out.printf("The Surface Area of a cube with length %10.5f is %10.5f \n", side, surfaceArea);
 	}
 }
 	

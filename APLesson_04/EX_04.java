@@ -1,35 +1,40 @@
 import java.util.Scanner;
 public class EX_04
 {
+	
+	static double r,n,P,year,t,compound;
 	public static void main(String[]args)
 	{ 
 		Scanner keyboard = new Scanner(System.in);
 		EX_04 calculate = new EX_04();
 		
 		System.out.println ("Enter rate:");
-		double r = keyboard.nextDouble();;
+		r = keyboard.nextDouble();;
 		System.out.println ("Enter number of times:");
-		double n = keyboard.nextDouble();;
+		n = keyboard.nextDouble();;
 		System.out.println ("Enter your Initial Amount:");
-		double P = keyboard.nextDouble();;
+		P = keyboard.nextDouble();;
 		System.out.println ("Enter time:");
-		double year = keyboard.nextDouble();;
+		year = keyboard.nextDouble();;
 		
-		double t = year/12;
-		
-		
+		t = year/12;
 		
 		
-		double compound = calculate.calcinterest(r, n, P, t);
 		
-		System.out.printf("The total compounded interest is $ %.2f\n", compound);
+		calcinterest();
+		print();
+		
 		
 	}
 	
-	public double calcinterest (double r, double n, double P, double t)
+	public static void calcinterest ()
 	{
-		return (P * Math.pow((1 + (r/n)), (n * t)));
-	
+		compound =  (P * Math.pow((1 + (r/n)), (n * t)));
 		
+	}
+	
+	public static void print ()
+	{
+		System.out.printf("The total compounded interest is $ %.2f\n", compound);
 	}
 }
