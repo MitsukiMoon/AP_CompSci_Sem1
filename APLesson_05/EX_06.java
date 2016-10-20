@@ -6,7 +6,7 @@ public class EX_06
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		EX_06 calculate = new EX_06();
+
 		username = "jodie";
 		password = "1234";	
 		passCheck();
