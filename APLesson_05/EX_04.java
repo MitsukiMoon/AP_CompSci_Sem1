@@ -1,12 +1,12 @@
 import java.util.Scanner;
-public class EX_02
+public class EX_04
 {
 	static double height, weight, BMI;
 
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		EX_02 calculate = new EX_02();
+		EX_04 calculate = new EX_04();
 		
 		System.out.println ("How fat are you?");
 		weight = keyboard.nextDouble();
@@ -16,7 +16,7 @@ public class EX_02
 		
 		BMI = (703 * weight)/(height*height);
 		
-		System.out.println ("Your BMI is " + BMI + "/n Thus, you are " + condition(BMI));
+		System.out.println ("Your BMI is " + BMI + "\n Thus, you are " + condition(BMI));
 		
 		
 		

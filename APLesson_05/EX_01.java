@@ -16,7 +16,7 @@ public class EX_01
 		winner = calculate. rollDice();
 		System.out.println ("You rolled a " + PlayerRoll);
 		System.out.println ("Computer rolled a " + ComputerRoll);
-		System.out.println("The winner is " + winner);
+		System.out.println("And the winner is " + winner);
 		
 		
 	}

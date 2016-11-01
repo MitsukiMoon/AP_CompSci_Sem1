@@ -21,20 +21,17 @@ public class EX_04
 		
 		
 		
-		calcinterest();
-		print();
+		calcinterest(r, P, n, year);
+		System.out.printf("The total compounded interest is $ %.2f\n", compound);
 		
 		
 	}
 	
-	public static void calcinterest ()
+	public static double calcinterest (double r, double p, double n, double t)
 	{
 		compound =  (P * Math.pow((1 + (r/n)), (n * t)));
-		
+		return compound;
 	}
 	
-	public static void print ()
-	{
-		System.out.printf("The total compounded interest is $ %.2f\n", compound);
-	}
+
 }

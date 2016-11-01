@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class EX_01
+public class EX_03
 {
 	static String Science, Math, History, CompSci, Spanish, English, Psychology;
 	static double gPoints, gpa;
@@ -7,9 +7,9 @@ public class EX_01
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		EX_01 calculate = new EX_01();
+		EX_03 calculate = new EX_03();
 		
-		System.out.println ("Please grade for Science, Math, History, CompSci, Spanish, English, Psychology respectively:");
+		System.out.println ("Please enter grade for Science, Math, History, CompSci, Spanish, English, Psychology respectively:");
 		
 		Science = keyboard.next();
 		Math = keyboard.next();
