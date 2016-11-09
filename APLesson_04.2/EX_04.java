@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class EX_04
 {
+	static double radius, Area;
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
@@ -8,15 +9,15 @@ public class EX_04
 
 		System.out.println ("Please enter radius");
 		
-		double radius = keyboard.nextFloat();
+		radius = keyboard.nextFloat();
 		
 		String place1 = keyboard.nextLine();
 		
 
 		
-		double Area = calculate.Area(radius);
+		Area = calculate.Area(radius);
 		
-		System.out.printf("The Area of a circle with a radius of %10.5f is %10.5f \n", radius, Area);
+		print();
 		
 	}
 	
@@ -25,6 +26,11 @@ public class EX_04
 		return ((Math.PI * radius * radius));
 	
 		
+	}
+	
+	public static void print ()
+	{
+		System.out.printf("The area of a circle with a radius of %.5f is %.5f \n", radius, Area);
 	}
 }
 	

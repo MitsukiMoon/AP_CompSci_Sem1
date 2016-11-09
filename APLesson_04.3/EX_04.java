@@ -7,17 +7,11 @@ public class EX_04
 		EX_04 calculate = new EX_04();
 		
 		System.out.println ("Enter rate:");
-		double r = keyboard.nextDouble();;
-		System.out.println ("Enter number of times:");
-		double n = keyboard.nextDouble();;
-		System.out.println ("Enter your Initial Amount:");
-		double P = keyboard.nextDouble();;
-		System.out.println ("Enter time:");
-		double year = keyboard.nextDouble();;
+		double radius = keyboard.nextFloat();
 		
-		double t = year/12;
+		String place1 = keyboard.nextLine();
 		
-		
+
 		
 		
 		double compound = calculate.calcinterest(r, n, P, t);
