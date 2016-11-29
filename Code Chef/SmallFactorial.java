@@ -6,20 +6,20 @@ class SmallFactorial
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		int n = 1;
-		int t;
-		int output = 1;
-		Scanner keyboard=new Scanner(System.in);
-		t = keyboard.nextInt();
-		while (t> 0){
-			for (int i = 0; i < t; i++)
-			{
-				output = n * i;
-			}
-			
+		Scanner keyboard = new Scanner(System.in);
+		int t = keyboard.nextInt();
+		
+		while (t > 0)
+		{
+			int output = 1;
+			int n = keyboard.nextInt();
+				for (int i = 1; i < (n+1); i++)
+				{
+					output = output * i;
+				}
+				
 			System.out.println (output);
-			
-		t --;
+			t --;
 		}
 
 	}
