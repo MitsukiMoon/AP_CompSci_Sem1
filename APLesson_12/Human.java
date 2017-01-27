@@ -1,61 +1,57 @@
 import java.lang.Math.*;
-public class MilesPerHour 
+public class Human
 {
-	private int distance, hours, minutes;
-	private double mph;
+	private String Hair, Eyes, Skin;
+
 	
-	public MilesPerHour ()
+	public Human ()
 	{
-		distance = 0;
-		hours = 0;
-		minutes = 0;
-		mph = 0;
+		Hair = "";
+		Eyes = "";
+		Skin = "";
+
 		
 	}
 	
-	public MilesPerHour(int d, int h, int m)
+	public Human(String h, String e, String s)
 	{
-		distance = d;
-		hours = h;
-		minutes = m;
-		mph = 0;
+		Hair = h;
+		Eyes = e;
+		Skin = s;
+
 	}
 	
-	public void setDistance (int d)
+	public void setHair (String h)
 	{
-		distance = d;
+		Hair = h;
 	}
 	
-	public void setHours (int h)
+	public void setEyes (String e)
 	{
-		hours = h;
+		Eyes = e;
 	}
 	
-	public void setMinutes (int m)
+	public void setSkin (String s)
 	{
-		minutes = m;
+		Skin = s;
 	}
 	
-	public int getDistance ()
+	public String getHair ()
 	{
-		return distance;
+		return Hair;
 	}
 	
-	public int getHours ()
+	public String getEyes ()
 	{
-		return hours;
+		return Eyes;
 	}
 	
-	public int getMinutes ()
+	public String getSkin ()
 	{
-		return minutes;
+		return Skin;
 	}
 	
-	public double getMph ()
-	{
-		mph = Math.round(distance / (hours + (minutes / 60)));
-		return mph;
-	}
+
 	
 	
 	

@@ -1,24 +1,26 @@
 import java.util.Scanner;
-public class EX_01Runner
+public class EX_04Runner
 {
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
-		int distance = kb.nextInt();
-		int hours = kb.nextInt();
-		int minutes = kb.nextInt();
+		System.out.println ("Please list the characteristics: ");
+		String hair = kb.next();
+		String eyes = kb.next();
+		String skin = kb.next();
 		
-		MilesPerHour object = new MilesPerHour(distance, hours, minutes);
+		Human object = new Human(hair, eyes, skin);
 		
-		
-		System.out.println(object.getDistance() + " miles in " + object.getHours() + " hours = " + object.getMph() + " mph ");
+		System.out.println("My info...");
+		System.out.println("Hair: " + object.getHair() + "| Eyes:  " + object.getEyes() + "| Skin: " + object.getSkin());
 		
 
-		object.setDistance(kb.nextInt());
-		object.setHours (kb.nextInt());
-		object.setMinutes (kb.nextInt());
+		object.setHair(kb.next());
+		object.setEyes (kb.next());
+		object.setSkin (kb.next());
 		
-		System.out.println(object.getDistance() + " miles in " + object.getHours() + " hours = " + object.getMph() + " mph ");
+		System.out.println("Friend's info...");
+		System.out.println("Hair: " + object.getHair() + "| Eyes:  " + object.getEyes() + "| Skin: " + object.getSkin());
 		
 		
 		

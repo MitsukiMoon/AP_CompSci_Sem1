@@ -16,7 +16,7 @@ public class EX_07
 		
 		
 		fillArray(words);
-		System.out.println("For the following numbers...");
+		System.out.println("For the following words...");
 		printArray (words);
 		System.out.println("Only" + hasZs(words) + " contain(s) the letter z.");
 
@@ -26,8 +26,10 @@ public class EX_07
 	}
 	
 	public static void fillArray(String[] array){
+		System.out.println ("Please enter your words");
 		Scanner kb = new Scanner(System.in);
-		for (int i = 0; i <= 4; i++)
+		
+		for (int i = 0; i < array.length; i++)
 		{
 			array[i] = kb.nextLine();
 		}
@@ -37,7 +39,10 @@ public class EX_07
 	
 	public static void printArray(String[] array) {
 		
-		System.out.println(Arrays.toString(array));
+		for (String word: array)
+		{
+			System.out.print(word + " ");
+		}
 
 		
 		
@@ -49,9 +54,9 @@ public class EX_07
 		
 		for (String word: words)
 		{
-			if (word.indexOf("z") >= 0 ){
-				zs += " ";
-				zs += word;
+			if (word.indexOf("z") >=  0 ){
+
+				zs += (" " + word);
 				
 			}
 

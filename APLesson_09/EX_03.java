@@ -1,18 +1,22 @@
 import java.util.Scanner;
+import java.util.Random;
+
 public class EX_03
 {
 	
 	public static void main(String[]args)
 	{
-		Scanner kb = new Scanner(System.in);
+		
 		EX_03 calculate = new EX_03();
+		
+		Random rand = new Random();
 		
 		int[] numbers = new int [10];
 		System.out.println ("Please enter number(s)");
 		
 		for (int i = 0; i < numbers.length; i++)
 		{
-			numbers[i] = kb.nextInt();
+			numbers[i] = rand.nextInt((100 - 1) + 1) + 1;
 
 		}
 		
