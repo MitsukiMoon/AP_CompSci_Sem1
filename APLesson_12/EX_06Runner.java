@@ -5,28 +5,25 @@ public class EX_06Runner
 	{
 		Scanner kb = new Scanner(System.in);
 		
-		InventoryItems item1;
-		
-		
-		
-		
-		
+			
 		
 		System.out.println ("What's your item information?");
 		String ItemManufacturer = kb.next();
 		String ItemName = kb.next();
 		
 		
-		System.out.println("WIll you be entering category and price information?")
+		System.out.println("Will you be entering category and price information?");
+		
+		String Item = kb.next();
 		
 
-		if (Avatar.equals("n")) {
+		if (Item.equals("n")) {
 			InventoryItems item1 = new InventoryItems(ItemManufacturer, ItemName);
 			System.out.println (item1);
 		}
 		
-		if (Avatar.equals("y")) {
-			System.out.println ("What is your username?");
+		if (Item.equals("y")) {
+			System.out.println ("What is your Price and Category?");
 			double ItemPrice = kb.nextFloat();
 			String ItemCategory = kb.next();
 			InventoryItems item1 = new InventoryItems(ItemManufacturer, ItemName, ItemCategory, ItemPrice);

@@ -3,22 +3,22 @@ import java.lang.Math.*;
 public class InventoryItems
 {
 	private String ItemManufacturer, ItemName, ItemCategory;
-	private int UserID;
-	private float ItemPrice;
+	private int UPC;
+	private double ItemPrice;
 	
-	public InventoryItems (ItemManufacturer, ItemName)
+	public InventoryItems (String Manufacturer, String Name)
 	{
-		ItemManufacturer = "";
-		ItemName = "";
+		ItemManufacturer = Manufacturer;
+		ItemName = Name;
 		UPC = (int)(Math.random() * 100000000) + 1;
 	}
 	
-	public InventoryItems (ItemManufacturer, ItemName, ItemCategory, ItemPrice)
+	public InventoryItems (String Manufacturer, String Name, String Category, double Price)
 	{
-		ItemManufacturer = "";
-		ItemName = "";
-		ItemCategory = "";
-		ItemPrice = 0.00;
+		ItemManufacturer = Manufacturer;
+		ItemName = Name;
+		ItemCategory = Category;
+		ItemPrice = Price;
 		UPC = (int)(Math.random() * 100000000) + 1;
 	}
 		
@@ -28,7 +28,7 @@ public class InventoryItems
 	public String toString()
 	{
 	   return "Inventory Items ...	\nManufacturer: " + ItemManufacturer +
-									"\Name: " + ItemName +
+									"\nName: " + ItemName +
 									"\nCategory: " + ItemCategory +
 									"\nUPC#: " + UPC +
 									"\nPrice: " + ItemPrice;
