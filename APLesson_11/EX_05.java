@@ -25,9 +25,9 @@ public class EX_05
 				reload();
 			}
 			
-			if (action.equals("S"))
+			else
 			{
-				shoot();
+				System.out.println(shoot());
 			}
 			printClip();
 			
@@ -74,6 +74,7 @@ public class EX_05
 		{
 			shotCount = bulletCount;
 			bulletCount = 0;
+
 		}
 		
 		resetClip();
@@ -91,7 +92,7 @@ public class EX_05
 		
 		for (int i = 0; i < CLIPSIZE; i++) 
 		{
-			output += clip[i];
+			output = output + clip[i];
 			
 		}
 		
