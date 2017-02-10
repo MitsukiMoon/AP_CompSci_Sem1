@@ -58,7 +58,7 @@ public class Car
 		return engine;
 	}
 
-		public String getTires ()
+	public String getTires ()
 	{
 		return tires;
 	}
