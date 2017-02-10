@@ -1,5 +1,9 @@
 public abstract class Console extends GameSystem
 {
+	private String platform;
+	private int serialNo;
+	private String controller;
+	
 	public Console ()
 	{
 		super();

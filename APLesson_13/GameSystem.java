@@ -2,6 +2,9 @@ import java.lang.Math.*;
 
 public class GameSystem
 {
+	private String platform;
+	private int serialNo;
+	
 	public GameSystem()
 	{
 		String platform = "";
@@ -19,7 +22,7 @@ public class GameSystem
 		return platform;
 	}
 	
-	public String getSerialNo ()
+	public int getSerialNo ()
 	{
 		return serialNo;
 	}
