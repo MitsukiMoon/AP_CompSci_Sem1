@@ -1,14 +1,14 @@
 import java.lang.Math.*;
 
-public class GameSystem
+public abstract class GameSystem
 {
 	private String platform;
 	private int serialNo;
 	
 	public GameSystem()
 	{
-		String platform = "";
-		int serialNo = 0;	
+		platform = "";
+		serialNo = 0;	
 	}
 	
 	public GameSystem (String p)

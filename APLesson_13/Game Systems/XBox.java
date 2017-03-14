@@ -1,12 +1,14 @@
 public class XBox extends Console
 {
-	private String platform;
-	private int serialNo;
-	private String controller;
 	
-	public class XBox 
+	public XBox ()
 	{
 		super();
+	}
+	
+	public XBox (String p)
+	{
+		super(p);
 	}
 	
 	public String getController()
