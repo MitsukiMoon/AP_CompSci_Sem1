@@ -66,7 +66,7 @@ public class Satellite
 
    public static String getLocation(double[] loc)
    {
-		return "(" + String.format("0.2%f 0.2%f", loc[0], loc[1]) + ")" ;
+		return "(" + String.format("%1$.2f %2$.2f", loc[0], loc[1]) + ")" ;
 	
    }
 }

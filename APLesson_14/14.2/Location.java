@@ -2,5 +2,5 @@ public interface Location
 {
    double[] getLoc();
    int getID();
-   void move();
+   void move(double xCoordinate, double yCoordinate);
 }

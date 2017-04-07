@@ -21,20 +21,5 @@ public class Toyota extends Car
 
 	}
 	
-	public int getID()
-	{
-		return super.getID();
-	}
-	
-	public void move(double xCoordinate, double yCoordinate)
-	{
-		location [0] += xCoordinate;
-		location [1] += yCoordinate;
-	}
-	
-	public double[] getLoc()
-	{
-		return location;	
-	}
-	
+
 }

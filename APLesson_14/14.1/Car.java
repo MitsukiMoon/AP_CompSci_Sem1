@@ -23,5 +23,4 @@ public abstract class Car implements Location
 	
 	public abstract void move(double xCoordinate, double yCoordinate);
 	
-	
 }
