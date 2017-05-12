@@ -53,7 +53,6 @@ public class Magpie2
 		}
 		
 		else if (findKeyword(statement, "robinette") >= 0)
-
 		{
 			response = "He sounds like a pretty dank teacher.";
 		}
@@ -72,6 +71,12 @@ public class Magpie2
 		{
 			response = "Say something, please.";
 		}
+		
+		else if (findKeyword(statement, "I want to", 0) >= 0)
+		{
+			response = transformIWantToStatement(statement);
+		}
+		
 		else
 		{
 			response = getRandomResponse();

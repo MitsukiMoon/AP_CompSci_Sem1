@@ -17,6 +17,7 @@ public class PictureTester
     beach.explore();
   }
   
+
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -51,6 +52,76 @@ public class PictureTester
     swan.explore();
   }
   
+  public static void testKeepOnlyBlue()
+  {
+	Picture cat = new Picture ("bananacat.jpg");
+	cat.keepOnlyBlue();
+	cat.explore();
+  }
+  
+  public static void testNegate()
+  {
+	Picture cat = new Picture ("bananacat.jpg");
+	cat.negate();
+	cat.explore();
+  }
+  
+  public static void testGrayscale()
+  {
+	Picture cat = new Picture ("bananacat.jpg");
+	cat.grayscale();
+	cat.explore();
+  }
+   
+  public static void testMirrorVerticalRightToLeft()
+  {
+	Picture cat = new Picture ("bananacat.jpg");
+	cat.mirrorVerticalRightToLeft();
+	cat.explore();
+  }
+  
+  public static void testMirrorHorizontal()
+  {
+	Picture cat = new Picture ("bananacat.jpg");
+	cat.mirrorHorizontal();
+	cat.explore();  
+  }
+  
+  public static void testMirrorHorizontalBotToTop()
+  {
+	Picture cat = new Picture ("bananacat.jpg");
+	cat.mirrorHorizontalBotToTop();
+	cat.explore();  
+  }
+  
+  public static void testMirrorArms()
+  {
+	Picture snowman = new Picture ("snowman.jpg");
+	snowman.mirrorArms();
+	snowman.explore();
+  }
+  
+  public static void testMirrorGull()
+  {
+	Picture seagull = new Picture ("seagull.jpg");
+	seagull.mirrorGull();
+	seagull.explore();
+  }
+  
+  public static void testCopy2()
+  {
+	Picture flower = new Picture ("flower1.jpg");
+	flower.copy2(flower, 20,50,20,50);
+	flower.explore();
+  }
+  
+  public static void testMyCollage()
+  {
+	Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();  
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -58,7 +129,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -71,7 +142,9 @@ public class PictureTester
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
+	testMyCollage();
     //testCopy();
+	//testCopy2();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
@@ -80,5 +153,9 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+	//testMirrorVerticalRightToLeft();
+	//testMirrorHorizontal();
+	//testMirrorHorizontalBotToTop();
+
   }
 }
