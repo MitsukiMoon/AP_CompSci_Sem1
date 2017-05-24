@@ -7,7 +7,7 @@ public class Shuffler {
 	 * The number of consecutive shuffle steps to be performed in each call
 	 * to each sorting procedure.
 	 */
-	private static final int SHUFFLE_COUNT = 1;
+	private static final int SHUFFLE_COUNT = 10;
 
 
 	/**
@@ -17,7 +17,7 @@ public class Shuffler {
 	public static void main(String[] args) {
 		System.out.println("Results of " + SHUFFLE_COUNT +
 								 " consecutive perfect shuffles:");
-		int[] values1 = {0, 1, 2, 3};
+		int[] values1 = {0, 1, 2, 3, 4, 5};
 		for (int j = 1; j <= SHUFFLE_COUNT; j++) {
 			perfectShuffle(values1);
 			System.out.print("  " + j + ":");
@@ -51,8 +51,42 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] shuffle = new int[values.length];
+		
+		for (int i = 0; i < (values.length)/2; i++)
+		{
+			shuffle[2 * i] = values[i];
+			shuffle[2*i+1] = values[(values.length/2)+i];
+		}
+		
+		if(shuffle.length % 2 == 1)
+		{
+			shuffle[values.length-1] = values[values.length-1];
+		}
+		
+		for (int i = 0; i < values.length; i++)
+		{
+			values[i] = shuffle[i];
+		}
+	
 	}
+	public String flip()
+	{
+		int r = (int)(Math.random() * 3);
+		
+		if (r > 1)
+		{
+			return "heads";
+		}
+		
+		else
+		{
+			return "tails";
+		}
+	}
+	
 
+	
 	/**
 	 * Apply an "efficient selection shuffle" to the argument.
 	 * The selection shuffle algorithm conceptually maintains two sequences
@@ -66,5 +100,15 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		for (int i = values.length - 1; i > 0; i--)
+		{
+			int a = (int) (Math.random() * (i + 1)  + 1) -1;
+			int b = values[i];
+			values[i] = values [a];
+			values[a] = b;
+		}
+		
 	}
+	
+
 }

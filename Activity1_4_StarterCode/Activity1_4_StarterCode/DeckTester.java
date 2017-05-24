@@ -9,17 +9,16 @@ public class DeckTester {
 	 */
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		String [] ranks = {"A", "B", "C"};
-		String [] suits = {"Giraffes", "Lions"};
-		String [] suits2 = {"Toshiro", "Karma"};
-		String [] suits3 = {"Alice", "Lily"};
-		int [] values = {2,1,6};
+		String [] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+		String [] suits = {"Hearts", "Spades", "Diamonds", "Clubs"};
+		int [] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1};
+		
 		Deck Penguins = new Deck(ranks, suits , values);
-		Deck Happy = new Deck (ranks, suits2, values );
-		Deck Anime = new Deck (ranks, suits3, values);
+
 		
 		System.out.println(Penguins.deal());
-		System.out.println(Happy.deal());
-		System.out.println(Anime.deal());
+
+		
+		
 	}
 }
